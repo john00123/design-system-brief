@@ -1,0 +1,626 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en">
+  <head>
+    <div style="color:transparent;display:none;font-size:0;height:0;opacity:0;visibility:hidden;width:0">Design System Newsletter</div>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        @font-face {
+          font-family: 'nutanix_soft';
+          src: url('https://john00123.github.io/ntnx-tile/font/nutanixsoft-bold-webfont.woff2') format('woff2'),
+          url('https://john00123.github.io/ntnx-tile/font/nutanixsoft-bold-webfont.woff') format('woff');
+          font-weight: 700;
+          font-style: bold;
+        }
+        @font-face {
+          font-family: 'nutanix_soft';
+          src: url('https://john00123.github.io/ntnx-tile/font/nutanixsoft-medium-webfont.woff2') format('woff2'),
+          url('https://john00123.github.io/ntnx-tile/font/nutanixsoft-medium-webfont.woff') format('woff');
+          font-weight: 500;
+          font-style: medium;
+
+        }
+        @font-face {
+          font-family: 'nutanix_soft';
+          src: url('https://john00123.github.io/ntnx-tile/font/nutanixsoft-regular-webfont.woff2') format('woff2'),
+          url('https://john00123.github.io/ntnx-tile/font/nutanixsoft-regular-webfont.woff') format('woff');
+          font-weight: 400;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: 'nutanix_soft';
+          src: url('https://john00123.github.io/ntnx-tile/font/nutanixsoft-semibold-webfont.woff2') format('woff2'),
+          url('https://john00123.github.io/ntnx-tile/font/nutanixsoft-semibold-webfont.woff') format('woff');
+          font-weight: 600;
+          font-style: semibold;
+        }
+        @font-face {
+          font-family: 'nutanix_soft';
+          src: url('https://john00123.github.io/ntnx-tile/font/nutanixsoft-thin-webfont.woff2') format('woff2'),
+          url('https://john00123.github.io/ntnx-tile/font/nutanixsoft-thin-webfont.woff') format('woff');
+          font-weight: 400;
+          font-style: thin;
+        }
+
+      -webkit-font-smoothing: antialiased !important;
+      text-rendering: optimizeLegibility !important;
+    </style>
+
+    <div>
+      <!--[if (mso)|(IE)]>
+      <style type="text/css">
+      table h1,
+      table h2,
+      table h3,
+      table h4,
+      table h5,
+      table h6,
+      table a,
+      table p,
+      table div {
+        color: #22272E !important;
+        font-family: sans-serif !important;
+      }
+      .outlook-row-container {
+        padding-bottom: 24px !important;
+        padding-left: 48px !important;
+        padding-right: 48px !important;
+        padding-top: 24px !important;
+      }
+      table a.base-button {
+        border: 1px solid #22272E !important;
+        color: #22272E !important;
+        display: inline-block !important;
+        font-size: 18px !important;
+        font-weight: bold !important;
+        padding-top: 16px !important;
+      }
+      table div#brand-header {
+        padding-bottom: 24px !important;
+        padding-top: 48px !important;
+      }
+      table .outlook-only {
+        display: block !important;
+      }
+      table.non-outlook-only,
+      table .non-outlook-only {
+        background-color: red;
+        display: none !important;
+        height: 0 !important;
+        max-height: 0px !important;
+        mso-hide: all !important;
+        overflow: hidden !important;
+        padding-bottom: 0 !important;
+        width: 0 !important;
+      }
+      </style>
+      <![endif]-->
+    </div>
+
+    <style type="text/css">
+  @media only screen and (max-width: 561.5px) {
+    table .height_12_10 {
+      height: 10px !important;
+    }
+    table .height_18_16 {
+      height: 16px !important;
+    }
+    table .height_48_24 {
+      height: 24px !important;
+    }
+    table .bottom_0_1 {
+      padding-bottom: 8px !important;
+    }
+    table .bottom_1_0 {
+      padding-bottom: 0px !important;
+    }
+    table .bottom_3_2 {
+      padding-bottom: 16px !important;
+    }
+    table .bottom_4_3 {
+      padding-bottom: 24px !important;
+    }
+    table .bottom_5_3 {
+      padding-bottom: 24px !important;
+    }
+    table .bottom_6_4 {
+      padding-bottom: 32px !important;
+    }
+    table .left_0-5_0-25 {
+      padding-left: 2px !important;
+    }
+    table .left_1-25_1-5 {
+      padding-left: 12px !important;
+    }
+    table .left_2_0 {
+      padding-left: 0px !important;
+    }
+    table .left_3_2 {
+      padding-left: 16px !important;
+    }
+    table .left_6_3 {
+      padding-left: 24px !important;
+    }
+    table .left_9_6 {
+      padding-left: 48px !important;
+    }
+    table .right_0-5_0-25 {
+      padding-right: 2px !important;
+    }
+    table .right_1_0 {
+      padding-right: 0px !important;
+    }
+    table .right_1-25_1-5 {
+      padding-right: 12px !important;
+    }
+    table .right_2_0 {
+      padding-right: 0px !important;
+    }
+    table .right_3_2 {
+      padding-right: 16px !important;
+    }
+    table .right_6_3 {
+      padding-right: 24px !important;
+    }
+    table .right_9_6 {
+      padding-right: 48px !important;
+    }
+    table .top_0-5_1 {
+      padding-top: 8px !important;
+    }
+    table .top_0-75_0-5 {
+      padding-top: 4px !important;
+    }
+    table .top_1_0 {
+      padding-top: 0px !important;
+    }
+    table .top_1_0-5 {
+      padding-top: 4px !important;
+    }
+    table .top_1-25_0-5 {
+      padding-top: 4px !important;
+    }
+    table .top_1-5_0-5 {
+      padding-top: 4px !important;
+    }
+    table .top_1-5_1 {
+      padding-top: 8px !important;
+    }
+    table .top_1-5_1-5 {
+      padding-top: 12px !important;
+    }
+    table .top_2_1 {
+      padding-top: 8px !important;
+    }
+    table .top_2_1-25 {
+      padding-top: 10px !important;
+    }
+    table .top_2-25_1-5 {
+      padding-top: 12px;
+    }
+    table .top_2_3 {
+      padding-top: 24px !important;
+    }
+    table .top_3_2 {
+      padding-top: 16px !important;
+    }
+    table .top_3_3 {
+      padding-top: 24px !important;
+    }
+    table .top_4_2 {
+      padding-top: 16px !important;
+    }
+    table .top_4_3 {
+      padding-top: 24px !important;
+    }
+    table .top_6_4 {
+      padding-top: 32px !important;
+    }
+    table .width_12_10 {
+      width: 10px !important;
+    }
+    table .width_18_16 {
+      width: 16px !important;
+    }
+    table .width_20_24 {
+      width: 24px !important;
+    }
+    table .width_28_20 {
+      width: 20px !important;
+    }
+    table .width_48_24 {
+      width: 24px !important;
+    }
+    table a.base-button {
+      display: block !important;
+      font-size: 16px !important;
+      line-height: 24px !important;
+      padding: 14px 24px !important;
+    }
+    table a.regular {
+      font-size: 16px !important;
+      line-height: 20px !important;
+    }
+    table a.small {
+      font-size: 12px !important;
+      line-height: 18px !important;
+    }
+    table div.base-button-container {
+      display: inline-block !important;
+      font-size: 16px !important;
+      line-height: 24px !important;
+      width: 100% !important;
+    }
+    table .brand-header {
+      padding-bottom: 0px !important;
+      padding-top: 32px !important;
+    }
+    table div.full-width {
+      width: 100% !important;
+    }
+    table div.normal-container {
+      border: none !important;
+      border-radius: unset !important;
+      overflow: visible !important;
+    }
+    table h1.heading1 {
+      font-size: 24px !important;
+      line-height: 28px !important;
+    }
+    table h2.heading2 {
+      font-size: 18px !important;
+      line-height: 22px !important;
+    }
+    table h3.heading3 {
+      font-size: 16px !important;
+      line-height: 20px !important;
+    }
+    table h4.heading4 {
+      font-size: 16px !important;
+      line-height: 20px !important;
+    }
+    table h1.super1 {
+      font-size: 32px !important;
+      line-height: 36px !important;
+    }
+    table h2.super2 {
+      font-size: 32px !important;
+      line-height: 36px !important;
+    }
+    table p.regular,
+    table div.regular,
+    table div.regular li {
+      font-size: 16px !important;
+      line-height: 24px !important;
+    }
+    table p.small,
+    table div.small {
+      font-size: 12px !important;
+      line-height: 18px !important;
+    }
+    table p.ui-large,
+    table div.ui-large {
+      font-size: 16px !important;
+      line-height: 20px !important;
+    }
+    table p.ui-medium,
+    table div.ui-medium {
+      font-size: 12px !important;
+      line-height: 16px !important;
+    }
+    table p.ui-small,
+    table div.ui-small {
+      font-size: 10px !important;
+      line-height: 12px !important;
+    }
+    table p.ui-xlarge,
+    table div.ui-xlarge {
+      font-size: 16px !important;
+      line-height: 20px !important;
+    }
+    table p.x-small,
+    table div.x-small {
+      font-size: 12px !important;
+      line-height: 18px !important;
+    }
+    table td.cell-padding-bottom {
+      padding-bottom: 24px !important;
+    }
+    table td.height_715_546 {
+      height: 546px !important;
+    }
+    table.mobile-view {
+      display: table !important;
+    }
+    table .mobile-view {
+      display: table !important;
+    }
+    table.desktop-view,
+    table .desktop-view {
+      display: none !important;
+    }
+  }
+  </style>
+  </head>
+  <body>
+    <div id="app">
+      <div dir="ltr">
+        <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;display:table;font-family:  'nutanix_soft',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';margin-left:auto;margin-right:auto;max-width:580px;padding:0;position:relative;vertical-align:top;width:100%">
+          <tbody>
+            <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+              <td class>
+                <div class="normal-container" style="border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; overflow: hidden;">
+
+
+                  <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                    <tbody>
+                      <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                        <td class="outlook-row-container left_6_3 right_6_3" style="padding-left: 48px; padding-right: 48px;">
+                          <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                            <tbody>
+                              <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                <td align="left" class="brand-header" style="padding-bottom: 0px; padding-top: 48px;"><img height='20px' src="https://images.squarespace-cdn.com/content/v1/5a09abcb90bcce4bd5518c91/1551223721258-CWRFQ4BCNUD4C0U6BQ8W/ke17ZwdGBToddI8pDm48kGQ7N5BvyzgnmVGBP9GKm5tZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PISmnQg2cogSJ0iWHyN2vBzene4YDEeTE23uY1ii0tP5k/Nutanix-Logo.png"
+                                    alt=""></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+                  <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                    <tbody>
+                      <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                        <td class="bottom_3 top_3" style="padding-bottom: 24px; padding-top: 24px;">
+                          <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                            <tbody>
+                              <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                <td class="outlook-row-container left_6_3 right_6_3" style="padding-left: 48px; padding-right: 48px;">
+                                  <h2 class="super2" style="font-size: 30px; line-height: 52px; color: #22272E; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-weight: 500; letter-spacing:-0.2px; margin: 0; mso-line-height-rule:exactly;">Design System Newsletter</h2>
+                                  <p style='margin-top:0!important; color:#4D5969;'>June 2020</p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                            <tbody>
+                              <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                <td class="top_4_3" style="padding-top: 20px;">
+                                    <div class="non-outlook-only">
+                                      <table cellpadding="0" class="non-outlook-only" style="border-collapse:collapse;border-spacing:0;width:100%">
+                                        <tbody>
+                                          <tr>
+                                            <td background="email2/sketch.png" class="_1cslt0x" data-eon-prop="imageUrl" data-eon-role="image" style="background: url(email2/sketch.png); padding-bottom: 55%; background-position: center !important; background-repeat: no-repeat !important; background-size: cover !important; height: 0px !important; max-height: 0px !important; overflow: hidden !important; width: 100% !important;" width="100% !important" height="0 !important"></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                                      <tbody>
+                                        <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                          <td class="outlook-only" style="display: none;"><img alt src="https://john00123.github.io/sketch-adoption/image2.jpg" style="border: 0 !important;"></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%;">
+                            <tbody>
+                              <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                <td class="outlook-row-container left_6_3 right_6_3 top_3_2" style="padding-left: 48px; padding-right: 48px; padding-top: 32px;">
+                                  <div class="regular" style="font-size: 18px; line-height: 28px; font-weight:400; color: #4D5969; font-family: 'nutanix_soft',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; margin: 0;">
+                                    <p class="regular" style="font-size: 18px; line-height: 28pxfont-weight:400; ; color: #4D5969; font-family: 'nutanix_soft',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; margin: 0 !important;">Last month we focused on organization and cleanup. Special thanks to all of you that helped during the process. This month we are focusing on productivity.
+</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+<!-- image -->
+
+                  <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                    <tbody>
+                      <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                        <td class="outlook-row-container bottom_3 top_3 left_6_3 right_6_3" style="padding-bottom: 24px; padding-top: 24px; padding-left: 48px; padding-right: 48px;">
+                          <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                            <tbody>
+                              <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                <td class>
+                                  <h2 class="heading2" style="font-size: 20px; line-height: 26px; color: #22272E; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-weight: 500; margin: 0;mso-line-height-rule:exactly;">New Sketch library</h2>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                            <tbody>
+                              <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                <td class="top_1" style="padding-top: 8px;">
+                                  <div class="regular" style="font-size: 18px; line-height: 28px; font-weight:400; color: #4D5969; font-family: 'nutanix_soft',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; margin: 0;">
+                                    <p class="regular" style="font-size: 18px; line-height: 28px; font-weight:400; ; color: #4D5969; font-family: 'nutanix_soft',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; margin: 0 !important;"> In our previous newsletter, we shared that our library usage is around 5% on projects across our design files. This ratio shows that we are not making the most of our symbol structure. <br>A more in-depth analysis pointed to symbol rigidity to be one of the leading causes</p>
+
+                                    <p class="regular" style="font-size: 18px; line-height: 28pxfont-weight:400; ; color: #4D5969; font-family: 'nutanix_soft',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; margin: 0 !important;">
+                                    <br>After months of extensive testing and feedback sessions, we are ready to release the library to all designers. We have created a website with a growing set of resources on how to make the most of our UI Kit. Big shout-out to Ahmed that has been focusing on pushing this library to the finish line.
+
+                                    <a href='https://nutanix.design/Sketch2.5'style="color: #1F88DE; text-decoration: none !important; font-family: 'nutanix_soft',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-weight: 400; outline: none !important;">https://nutanix.design/Sketch2.5</a></p><p>We will run some sessions introducing our new library. More details to follow up.
+                                    </p>
+                                  </div>
+                                </td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+
+
+                  <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                    <tbody>
+                      <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                        <td class="outlook-row-container bottom_3 top_3 left_6_3 right_6_3" style="padding-bottom: 24px; padding-top: 24px; padding-left: 48px; padding-right: 48px;">
+                          <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                            <tbody>
+                              <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                <td class>
+                                  <h2 class="heading2" style="font-size: 20px; line-height: 26px; color: #22272E; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-weight: 500; margin: 0;mso-line-height-rule:exactly;">Interviews</h2>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                            <tbody>
+                              <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                <td class="top_1" style="padding-top: 8px;">
+                                  <div class="regular" style="font-size: 18px; line-height: 28px; font-weight:400; color: #4D5969; font-family: 'nutanix_soft',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; margin: 0;">
+                                    <p class="regular" style="font-size: 18px; line-height: 28pxfont-weight:400; ; color: #4D5969;font-weight:400; font-family: 'nutanix_soft',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; margin: 0 !important;">In our research front we are getting closer to ending Phase-1 of our designer outreach. We are gathering some valuable feedback from you guys, and we are planning accordingly. Kacy is scheduling some conversations with all of you. Once we end this phase, we will be able to share some of the insights with you. Thanks for your collaboration.</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                    <tbody>
+                      <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                        <td class="outlook-row-container bottom_3 top_3 left_6_3 right_6_3" style="padding-bottom: 24px; padding-top: 24px; padding-left: 48px; padding-right: 48px;">
+                          <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                            <tbody>
+                              <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                <td class>
+                                  <h2 class="heading2" style="font-size: 20px; line-height: 26px; color: #22272E; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-weight: 500; margin: 0;mso-line-height-rule:exactly;">Illustration Library</h2>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                            <tbody>
+                              <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                <td class="top_1" style="padding-top: 8px;">
+                                  <div class="regular" style="font-size: 18px; line-height: 28px; font-weight:400; color: #4D5969; font-family: 'nutanix_soft',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; margin: 0;">
+                                  <p>
+                                    Over the last six months we’ve begun to thinks to streamline the consumption and implementation of illustration. After encountering more than our fair share of bumps along the road, we’re excited to finally share the new and improved Nutanix Illustration Library!
+
+                                     <a href='https://nutanix.design/illustrations'style="color: #1F88DE; text-decoration: none !important; font-family: 'nutanix_soft',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-weight: 400; outline: none !important;">https://nutanix.design/illustrations</a></p>
+                                    <p>The library- which is to be used by both the product and marketing teams- features improved filtering and search capabilities, 100’s of new illustrations, a robust selection of resources, and much more!
+                                    A big shout out for Nicolas Escoffier, who has been instrumental in making this a reality.<br>
+                                    We will be looking for range of people to put the library and guidelines through its paces in the coming weeks, so keep your eyes peeled on the Design Global Slack channel or drop Tomas Brunsdon a message if this piques your curiosity.</p>
+                                  </div>
+                                </td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+
+
+
+
+
+
+                  <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                    <tbody>
+                      <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                        <td class="outlook-row-container top_1 left_6_3 right_6_3" style="padding-top: 8px; padding-left: 48px; padding-right: 48px;">
+                          <table width="100%">
+                            <tbody>
+                              <tr>
+                                <td class="_12xcxtl" style="border-top: 1px solid #DBDFE1 !important;" width="100%"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                    <tbody>
+                      <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                        <td class>
+                          <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                            <tbody>
+                              <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                <td class="outlook-row-container left_6_3 right_6_3" style="padding-left: 48px; padding-right: 48px;">
+                                  <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                                    <tbody>
+                                      <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                        <td class="bottom_4_3 top_4_3" style="padding-bottom: 32px; padding-top: 32px;">
+                                          <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                                            <tbody>
+                                              <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                                <td class="top_0" style="padding-top: 0px;">
+                                                  <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                                                    <tbody>
+                                                      <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                                        <td class>
+                                                          <p class="_1g6ojml" style="color: #22272E !important; ont-family: 'nutanix_soft',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !important; font-size: 14px !important; font-weight: 400 !important; line-height: 18px !important; margin: 0px !important;">Nutanix</p>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                  <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                                                    <tbody>
+                                                      <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                                        <td class>
+                                                          <p class="_1g6ojml" style="color: #22272E !important; ont-family: 'nutanix_soft',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !important; font-size: 14px !important; font-weight: 400 !important; line-height: 18px !important; margin: 0px !important;"> Crafted in California</p>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                  <table cellpadding="0" class style="border-collapse:collapse;border-spacing:0;width:100%">
+                                                    <tbody>
+                                                      <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                                        <td class>
+                                                          <p class="_1g6ojml" style="color: #22272E !important; ont-family: 'nutanix_soft',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'!important; font-size: 14px !important; font-weight: 400 !important; line-height: 18px !important; margin: 0px !important;">San Jose, CA 95110</p>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
