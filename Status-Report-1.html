@@ -1,0 +1,1209 @@
+<div style="color:transparent;display:none;font-size:0;height:0;opacity:0;visibility:hidden;width:0">Status Report - Design Ops</div>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+  @font-face {
+    font-family: 'nutanix_soft';
+    src: url('https://john00123.github.io/ntnx-tile/font/nutanixsoft-bold-webfont.woff2') format('woff2'),
+      url('https://john00123.github.io/ntnx-tile/font/nutanixsoft-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: bold;
+  }
+
+  @font-face {
+    font-family: 'nutanix_soft';
+    src: url('https://john00123.github.io/ntnx-tile/font/nutanixsoft-medium-webfont.woff2') format('woff2'),
+      url('https://john00123.github.io/ntnx-tile/font/nutanixsoft-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: medium;
+
+  }
+
+  @font-face {
+    font-family: 'nutanix_soft';
+    src: url('https://john00123.github.io/ntnx-tile/font/nutanixsoft-regular-webfont.woff2') format('woff2'),
+      url('https://john00123.github.io/ntnx-tile/font/nutanixsoft-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'nutanix_soft';
+    src: url('https://john00123.github.io/ntnx-tile/font/nutanixsoft-semibold-webfont.woff2') format('woff2'),
+      url('https://john00123.github.io/ntnx-tile/font/nutanixsoft-semibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: semibold;
+  }
+
+  @font-face {
+    font-family: 'nutanix_soft';
+    src: url('https://john00123.github.io/ntnx-tile/font/nutanixsoft-thin-webfont.woff2') format('woff2'),
+      url('https://john00123.github.io/ntnx-tile/font/nutanixsoft-thin-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: thin;
+  }
+
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
+</style>
+
+<div>
+  <!--[if (mso)|(IE)]>
+      <style type="text/css">
+      table h1,
+      table h2,
+      table h3,
+      table h4,
+      table h5,
+      table h6,
+      table a,
+      table p,
+      table div {
+        color: #22272E !important;
+        font-family: sans-serif !important;
+      }
+      .outlook-row-container {
+        padding-bottom: 24px !important;
+        padding-left: 48px !important;
+        padding-right: 48px !important;
+        padding-top: 24px !important;
+      }
+      table a.base-button {
+        border: 1px solid #22272E !important;
+        color: #22272E !important;
+        display: inline-block !important;
+        font-size: 18px !important;
+        font-weight: bold !important;
+        padding-top: 16px !important;
+      }
+      table div#brand-header {
+        padding-bottom: 24px !important;
+        padding-top: 48px !important;
+      }
+      table .outlook-only {
+        display: block !important;
+      }
+      table.non-outlook-only,
+      table .non-outlook-only {
+        background-color: red;
+        display: none !important;
+        height: 0 !important;
+        max-height: 0px !important;
+        mso-hide: all !important;
+        overflow: hidden !important;
+        padding-bottom: 0 !important;
+        width: 0 !important;
+      }
+      </style>
+      <![endif]-->
+</div>
+
+<style type="text/css">
+  @media only screen and (max-width: 561.5px) {
+    table .height_12_10 {
+      height: 10px !important;
+    }
+
+    table .height_18_16 {
+      height: 16px !important;
+    }
+
+    table .height_48_24 {
+      height: 24px !important;
+    }
+
+    table .bottom_0_1 {
+      padding-bottom: 8px !important;
+    }
+
+    table .bottom_1_0 {
+      padding-bottom: 0px !important;
+    }
+
+    table .bottom_3_2 {
+      padding-bottom: 16px !important;
+    }
+
+    table .bottom_4_3 {
+      padding-bottom: 24px !important;
+    }
+
+    table .bottom_5_3 {
+      padding-bottom: 24px !important;
+    }
+
+    table .bottom_6_4 {
+      padding-bottom: 32px !important;
+    }
+
+    table .left_0-5_0-25 {
+      padding-left: 2px !important;
+    }
+
+    table .left_1-25_1-5 {
+      padding-left: 12px !important;
+    }
+
+    table .left_2_0 {
+      padding-left: 0px !important;
+    }
+
+    table .left_3_2 {
+      padding-left: 16px !important;
+    }
+
+    table .left_6_3 {
+      padding-left: 24px !important;
+    }
+
+    table .left_9_6 {
+      padding-left: 48px !important;
+    }
+
+    table .right_0-5_0-25 {
+      padding-right: 2px !important;
+    }
+
+    table .right_1_0 {
+      padding-right: 0px !important;
+    }
+
+    table .right_1-25_1-5 {
+      padding-right: 12px !important;
+    }
+
+    table .right_2_0 {
+      padding-right: 0px !important;
+    }
+
+    table .right_3_2 {
+      padding-right: 16px !important;
+    }
+
+    table .right_6_3 {
+      padding-right: 24px !important;
+    }
+
+    table .right_9_6 {
+      padding-right: 48px !important;
+    }
+
+    table .top_0-5_1 {
+      padding-top: 8px !important;
+    }
+
+    table .top_0-75_0-5 {
+      padding-top: 4px !important;
+    }
+
+    table .top_1_0 {
+      padding-top: 0px !important;
+    }
+
+    table .top_1_0-5 {
+      padding-top: 4px !important;
+    }
+
+    table .top_1-25_0-5 {
+      padding-top: 4px !important;
+    }
+
+    table .top_1-5_0-5 {
+      padding-top: 4px !important;
+    }
+
+    table .top_1-5_1 {
+      padding-top: 8px !important;
+    }
+
+    table .top_1-5_1-5 {
+      padding-top: 12px !important;
+    }
+
+    table .top_2_1 {
+      padding-top: 8px !important;
+    }
+
+    table .top_2_1-25 {
+      padding-top: 10px !important;
+    }
+
+    table .top_2-25_1-5 {
+      padding-top: 12px;
+    }
+
+    table .top_2_3 {
+      padding-top: 24px !important;
+    }
+
+    table .top_3_2 {
+      padding-top: 16px !important;
+    }
+
+    table .top_3_3 {
+      padding-top: 24px !important;
+    }
+
+    table .top_4_2 {
+      padding-top: 16px !important;
+    }
+
+    table .top_4_3 {
+      padding-top: 24px !important;
+    }
+
+    table .top_6_4 {
+      padding-top: 32px !important;
+    }
+
+    table .width_12_10 {
+      width: 10px !important;
+    }
+
+    table .width_18_16 {
+      width: 16px !important;
+    }
+
+    table .width_20_24 {
+      width: 24px !important;
+    }
+
+    table .width_28_20 {
+      width: 20px !important;
+    }
+
+    table .width_48_24 {
+      width: 24px !important;
+    }
+
+    table a.base-button {
+      display: block !important;
+      font-size: 16px !important;
+      line-height: 24px !important;
+      padding: 14px 24px !important;
+    }
+
+    table a.regular {
+      font-size: 16px !important;
+      line-height: 20px !important;
+    }
+
+    table a.small {
+      font-size: 12px !important;
+      line-height: 18px !important;
+    }
+
+    table div.base-button-container {
+      display: inline-block !important;
+      font-size: 16px !important;
+      line-height: 24px !important;
+      width: 100% !important;
+    }
+
+    table .brand-header {
+      padding-bottom: 0px !important;
+      padding-top: 32px !important;
+    }
+
+    table div.full-width {
+      width: 100% !important;
+    }
+
+    table div.normal-container {
+      border: none !important;
+      border-radius: unset !important;
+      overflow: visible !important;
+    }
+
+    table h1.heading1 {
+      font-size: 24px !important;
+      line-height: 28px !important;
+    }
+
+    table h2.heading2 {
+      font-size: 18px !important;
+      line-height: 22px !important;
+    }
+
+    table h3.heading3 {
+      font-size: 16px !important;
+      line-height: 20px !important;
+    }
+
+    table h4.heading4 {
+      font-size: 16px !important;
+      line-height: 20px !important;
+    }
+
+    table h1.super1 {
+      font-size: 32px !important;
+      line-height: 36px !important;
+    }
+
+    table h2.super2 {
+      font-size: 32px !important;
+      line-height: 36px !important;
+    }
+
+    table p.regular,
+    table div.regular,
+    table div.regular li {
+      font-size: 16px !important;
+      line-height: 24px !important;
+    }
+
+    table p.small,
+    table div.small {
+      font-size: 12px !important;
+      line-height: 18px !important;
+    }
+
+    table p.ui-large,
+    table div.ui-large {
+      font-size: 16px !important;
+      line-height: 20px !important;
+    }
+
+    table p.ui-medium,
+    table div.ui-medium {
+      font-size: 12px !important;
+      line-height: 16px !important;
+    }
+
+    table p.ui-small,
+    table div.ui-small {
+      font-size: 10px !important;
+      line-height: 12px !important;
+    }
+
+    table p.ui-xlarge,
+    table div.ui-xlarge {
+      font-size: 16px !important;
+      line-height: 20px !important;
+    }
+
+    table p.x-small,
+    table div.x-small {
+      font-size: 12px !important;
+      line-height: 18px !important;
+    }
+
+    table td.cell-padding-bottom {
+      padding-bottom: 24px !important;
+    }
+
+    table td.height_715_546 {
+      height: 546px !important;
+    }
+
+    table.mobile-view {
+      display: table !important;
+    }
+
+    table .mobile-view {
+      display: table !important;
+    }
+
+    table.desktop-view,
+    table .desktop-view {
+      display: none !important;
+    }
+  }
+</style>
+
+
+<div id="app">
+  <div dir="ltr">
+    <table cellpadding="0" class="" style="border-collapse: collapse; border-spacing: 0px; display: table; font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; margin-left: auto; margin-right: auto; max-width: 580px; padding: 0px; vertical-align: top; width: 100%;">
+      <tbody>
+        <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+          <td class="">
+            <div class="normal-container" style="border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; overflow: hidden;">
+
+
+              <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                <tbody>
+                  <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                    <td class="outlook-row-container left_6_3 right_6_3" style="padding-left: 48px; padding-right: 48px;">
+                      <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                        <tbody>
+                          <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                            <td align="left" class="brand-header" style="padding-bottom: 0px; padding-top: 48px;"><img height="20px" src="https://images.squarespace-cdn.com/content/v1/5a09abcb90bcce4bd5518c91/1551223721258-CWRFQ4BCNUD4C0U6BQ8W/ke17ZwdGBToddI8pDm48kGQ7N5BvyzgnmVGBP9GKm5tZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PISmnQg2cogSJ0iWHyN2vBzene4YDEeTE23uY1ii0tP5k/Nutanix-Logo.png"
+                                alt=""></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+              <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                <tbody>
+                  <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                    <td class="bottom_3 top_3" style="padding-bottom: 24px; padding-top: 24px;">
+                      <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                        <tbody>
+                          <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                            <td class="outlook-row-container left_6_3 right_6_3" style="padding-left: 48px; padding-right: 48px;">
+                              <h2 class="super2" style="font-size: 30px; line-height: 52px; color: #22272E; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-weight: 500; letter-spacing:-0.2px; margin: 0; mso-line-height-rule:exactly;">
+                                <!-- Title -->
+                                Global Design Ops Summary
+                              </h2>
+
+                              <p style="margin-top:0!important; color:#4D5969;">
+                                <!-- Date -->
+                                July 13, 2020
+                              </p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                        <tbody>
+                          <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                            <td class="top_4_3" style="padding-top: 20px;">
+                              <div class="non-outlook-only">
+                                <table cellpadding="0" class="non-outlook-only" style="border-collapse:collapse;border-spacing:0;width:100%">
+                                  <tbody>
+                                    <tr>
+                                      <td background="https://cdn.dribbble.com/users/76454/screenshots/10546759/media/e1cab2199897619b2985a3de7adaa3ed.png" class="_1cslt0x" data-eon-prop="imageUrl" data-eon-role="image" style="background: url(https://cdn.dribbble.com/users/76454/screenshots/10546759/media/e1cab2199897619b2985a3de7adaa3ed.png); background-image: url(https://cdn.dribbble.com/users/76454/screenshots/10546759/media/e1cab2199897619b2985a3de7adaa3ed.png); padding-bottom: 85%; background-position: center !important; background-repeat: no-repeat !important; background-size: cover !important; height: 0px !important; max-height: 0px !important; overflow: hidden !important; width: 100% !important;"
+                                        width="100% !important" height="0 !important"></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+
+                              <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                                <tbody>
+                                  <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                    <td class="outlook-only" style="display: none;"><img alt="" src="https://john00123.github.io/sketch-adoption/image2.jpg" style="border: 0 !important;"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- image -->
+
+              <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                <tbody>
+                  <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                    <td class="outlook-row-container bottom_3 top_3 left_6_3 right_6_3" style="padding-bottom: 24px; padding-top: 24px; padding-left: 48px; padding-right: 48px;">
+                      <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                        <tbody>
+                          <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                            <td class="">
+                              <h2 class="heading2" style="font-size: 20px; line-height: 26px; color: #22272E; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-weight: 500; margin: 0;mso-line-height-rule:exactly;"></h2>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <h2 class="gmail-heading2" style="font-size: 20px; line-height: 26px; color: rgb(34, 39, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 500; margin: 0px;">Product
+                        releases summary</h2>
+                      <div>
+                        <h2 class="gmail-heading2" style="font-size: 20px; line-height: 26px; color: rgb(34, 39, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 500; margin: 0px;"><br></h2>
+                        <h2 class="gmail-heading2" style="font-size: 20px; line-height: 26px; color: rgb(34, 39, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 500; margin: 0px;">5.19<span
+                            style="font-family: arial, sans-serif; font-size: small; color: rgb(34, 34, 34);">&#8203;</span></h2>
+                      </div>
+                      <div>
+                        <div style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: medium;">Promotion
+                          Gate: Jul/31/2020</div>
+                        <div style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: medium;">Target
+                          GA: Sep/30/2020</div>
+                      </div>
+                      <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                        <tbody>
+                          <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                            <td class="top_1" style="padding-top: 8px;">
+                              <div class="regular" style="line-height: 28px; font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; margin: 0px;">
+                                <ul style="">
+                                  <li style="color: rgb(77, 89, 105); font-weight: 400;"><span style="font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: large;">Changed
+                                      from a total of 13 FEATs to 12 FEATs because of FEAT-10385 moved to 5.20</span><br></li>
+                                  <li style="color: rgb(77, 89, 105); font-weight: 400;"><span style="font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: large;">7
+                                      FEATs are UX FnF reviewed ( FEAT-10250 was reviewed today).</span><br></li>
+                                  <li style="color: rgb(77, 89, 105); font-weight: 400;"><span style="font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: large;">5
+                                      FEATs are pending for the dev code completion&nbsp;</span><br></li>
+                                  <li style="">
+                                    <font color="#000000"><span style="font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: large;">⚠️<span
+                                          class="gmail_default" style="font-family: arial, sans-serif; font-size: small;">&#8203; &#8203;</span>5.19 PG is around the corner, I want to remind the FEAT UX Owner to check-in with your PM and FEAT
+                                        manager to schedule the UX Fit-and-Finish review sooner rather than&nbsp;</span><span style="font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: large;">later</span></font><span
+                                      style="font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: large;">
+                                      <font color="#000000">.</font>
+                                      <font color="#4d5969">&nbsp;</font>
+                                    </span><br>
+                                  </li>
+                                </ul>
+
+                              </div>
+                            </td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                <tbody>
+                  <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                    <td class="outlook-row-container bottom_3 top_3 left_6_3 right_6_3" style="padding-left: 48px; padding-right: 48px;">
+                      <div>
+                        <h2 class="gmail-heading2" style="font-size: 20px; line-height: 26px; color: rgb(34, 39, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 500; margin: 0px;">🐞<span
+                            class="gmail_default" style="font-family: arial, sans-serif; font-size: small;">&#8203; &#8203;</span>Bugs found by UX FnF reviews</h2>
+                      </div>
+                      <div>
+                        <ul>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">The
+                            cumulative bugs found by UX FnF Reviews are 317.</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">179
+                            out of 317 bugs are fixed; 46 of them will be released in 5.18</li>
+                          <li style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">
+                            <font color="#4d5969">Highlight product with highest </font>fixes<font color="#4d5969"> numbers: </font>
+                            <font color="#000000">38</font>
+                            <font color="#4d5969"> of them fixed for Prism UI and 16 of them fixed for Flow.</font>
+                          </li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Remaining
+                            10 bugs are in progress, and 128 bugs are pending with prioritization, triaging, and release planning.</li>
+                        </ul>
+                      </div>
+                      <div style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: medium;">
+                        <h2 class="gmail-heading2" style="font-size: 20px; line-height: 26px; color: rgb(34, 39, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 500; margin: 0px;">
+                          <div>
+                            <div class="gmail_default" style="font-family: arial, sans-serif; font-size: small;"><br></div>
+                          </div>
+                          <div>5.21 Release</div>
+                        </h2>
+                      </div>
+                      <div style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;">
+                        <div style="font-size: medium;">Commit Gate: Oct/31/2020</div>
+                        <div style="font-size: medium;">Promotion Gate: 11/30/2020</div>
+                        <div style="font-size: medium;">Target GA: TBD</div>
+                        <div style="font-size: medium;">
+                          <table cellpadding="0" class="gmail-" style="border-collapse: collapse; border-spacing: 0px; width: 100%;">
+                            <tbody>
+                              <tr class="gmail-_1ckj08w" style="padding: 0px; margin: 0px;">
+                                <td class="gmail-top_1" style="padding-top: 8px;">
+                                  <div class="gmail-regular" style="font-size: 18px; line-height: 28px; font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; margin: 0px;">
+                                    <p class="gmail-regular" style="font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; margin: 0px;"><span
+                                        style="font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;"><br></span></p>
+                                    <p class="gmail-regular" style="font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; margin: 0px;"><span
+                                        style="font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;">There
+                                        are two priority releases concurrently going at the same time, therefore, zero progress on the 5.21 for now.&nbsp;</span><br></p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div style="font-size: medium;"><br></div>
+                        <div style="font-size: medium;"><br></div>
+                        <div style="font-size: medium;"><br></div>
+                        <div style="font-size: medium;"><span style="color: rgb(34, 39, 46); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 20px;">🔺
+                            Consolidate Risks identified from the team</span><br></div>
+                        <div style="font-size: medium;"><span style="color: rgb(34, 39, 46); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 20px;"><br></span></div>
+                        <div style="font-size: medium;"><span class="gmail_default" style="color: rgb(34, 39, 46); font-family: arial, sans-serif; font-size: small;">
+                            <h2 class="gmail-heading2" style="font-size: 20px; line-height: 26px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 500; margin: 0px;"><span
+                                style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">🆕&nbsp;&nbsp;</span><span
+                                style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Design
+                                System</span><br></h2>
+                          </span>
+                          <div>@ John Torres</div>
+                          <blockquote class="gmail_quote" style="margin: 0px 0px 0px 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;"></blockquote>
+                          <ul>
+                            <li><span style="font-size: 18px;">Design system work requires more engineering resources to make significant progress.</span></li>
+                            <li><span style="font-size: 18px;">Slowing down progress due to product support. Timelines will be affected, trying to estimate the impact.</span></li>
+                          </ul><span style="font-size: 18px;">
+                            <div style="font-size: medium;">
+                              <h2 class="gmail-heading2" style="font-size: 20px; line-height: 26px; color: rgb(34, 39, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 500; margin: 0px;"><span
+                                  style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">🆕&nbsp;&nbsp;</span><span
+                                  style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Bridge
+                                  Management</span></h2>
+                            </div>
+                          </span>
+                        </div>
+                        <div style="font-size: medium;">@Shreya Indukuri&nbsp;<br></div>
+                        <ul>
+                          <li><span style="font-size: 18px;">Bridge management has some very big </span>asks<span style="font-size: 18px;">. Unclear what exactly is needed when. If they are planning on delivering on the entire PRD, then we do not
+                              have UX resources in SJC to cover it.</span></li>
+                        </ul>
+                        <div style="">
+                          <h2 class="gmail-heading2" style="font-size: 20px; line-height: 26px; color: rgb(34, 39, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 500; margin: 0px;">&nbsp;<span
+                              style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">🆕&nbsp;&nbsp;</span><span
+                              style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Insights</span></h2><span
+                            style="font-size: 18px;">&nbsp;</span><span style="font-size: medium;">@ Julie Ni</span>
+                        </div>
+                        <div style="">
+                          <blockquote class="gmail_quote" style="margin: 0px 0px 0px 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;">
+                            <blockquote class="gmail_quote" style="margin: 0px 0px 0px 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;"></blockquote>
+                          </blockquote>
+                          <ul>
+                            <li><span style="font-size: 18px;">The interdependency between Insights and Portal can lead to serious User Experience issues since we have 2 teams designing and implementing a “single” product on the user eyes.</span></li>
+                            <li><span style="font-size: 18px;">BLR Portal Design team will coordinate with Insights team on feedback for new search centric Portal pages.</span></li>
+                            <li><span style="font-size: 18px;">It is currently unclear where UX resources will be for new categories </span>feature<span style="font-size: 18px;"> in Insights. (San Jose or Bangalore?)</span></li>
+                          </ul>
+                          <blockquote class="gmail_quote" style="margin: 0px 0px 0px 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;">
+                            <blockquote class="gmail_quote" style="margin: 0px 0px 0px 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;"></blockquote>
+                          </blockquote>
+                          <blockquote class="gmail_quote" style="margin: 0px 0px 0px 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;"></blockquote>
+                          <div>&nbsp;</div>
+                          <div>
+                            <h2 class="gmail-heading2" style="font-size: 20px; line-height: 26px; color: rgb(34, 39, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 500; margin: 0px;">&nbsp;<span
+                                style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">ℹ️&nbsp;&nbsp;</span><span
+                                style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">AHV
+                                Core</span></h2>
+                          </div>
+                          <div><span style="font-size: medium;">@ Navdeep Bagga</span><span style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;"><br></span></div>
+                          <ul>
+                            <li><span style="font-size: 18px;">Foreseeing resource crunch for AHV-lined projects. Will need to draw the line on what I can and can not do. Have conveyed it to the PMs already and we’re working on the prioritization.</span></li>
+                          </ul><span class="gmail_default" style="font-family: arial, sans-serif;">
+                            <h2 class="gmail-heading2" style="font-size: 20px; line-height: 26px; color: rgb(34, 39, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 500; margin: 0px;">&nbsp;<span
+                                style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">ℹ️&nbsp;&nbsp;</span><span
+                                style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Prism
+                                Ops</span></h2>
+                          </span><span style="font-size: 18px;">&nbsp;</span><span style="font-size: medium;">@ Shyama Duriseti<br>
+                            <ul>
+                              <li><span style="font-size: 18px;">Spoke to Tim and Prakruthi about her taking over the project as it aligns with the Dashboards initiative.</span></li>
+                            </ul>
+                          </span>
+                          <h2 class="gmail-heading2" style="font-size: 20px; line-height: 26px; color: rgb(34, 39, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 500; margin: 0px;">&nbsp;<span
+                              style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">ℹ️&nbsp;
+                              Objects</span></h2>
+                        </div>
+                        <div style=""><span style="font-size: medium;">@ Viraj Sapre</span><br></div>
+                        <div style="">
+                          <ul>
+                            <li><span style="font-size: 18px;">Need a full-time UX person to be dedicated to Objects.&nbsp;</span></li>
+                          </ul>
+                          <h2 class="gmail-heading2" style="font-size: 20px; line-height: 26px; color: rgb(34, 39, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 500; margin: 0px;">&nbsp;<span
+                              style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">ℹ️&nbsp;
+                              DR<span class="gmail_default" style="font-family: arial, sans-serif; font-size: small;">&#8203; </span><span class="gmail_default" style="font-family: arial, sans-serif; font-size: small;">/ &#8203;</span>Cerebro</span></h2><span
+                            style="font-size: medium;">@ Kushagra Khandelwal</span><span style="font-size: 18px;">&nbsp;</span><br>
+                          <blockquote class="gmail_quote" style="margin: 0px 0px 0px 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;"></blockquote>
+                          <ul>
+                            <li><span style="font-size: 18px;">With constantly changing priorities (mainly a function of limited UI resources), a bunch of features for which UX has been completed is being deprioritized to a release later than 5.21.
+                                This has led to a lot of throws away work or work that might need rethinking after a year's time.&nbsp;</span></li>
+                            <li><span style="font-size: 18px;">With again limited UI investment and 5.20 being an LTS release we might have to ship with considerable UX issues that might stay in customer environments for longer periods.</span></li>
+                          </ul>
+                          <h2 class="gmail-heading2" style="font-size: 20px; line-height: 26px; color: rgb(34, 39, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 500; margin: 0px;">&nbsp;<span
+                              style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">ℹ️&nbsp;
+                              Files / AFS</span></h2><span style="font-size: medium;">@ Rama C. Kishore Vijjapurapu</span><br>
+                          <ul>
+                            <li><span style="font-size: 18px;">Rama is currently supporting leading and execution on Files, File Analytics and Clusters. Clusters does not have any deliverable scheduled in the next month. In case,&nbsp; Clusters
+                                gains momentum again then Rama might need additional help on the execution.</span></li>
+                          </ul>
+                          <h2 class="gmail-heading2" style="font-size: 20px; line-height: 26px; color: rgb(34, 39, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 500; margin: 0px;">&nbsp;<span
+                              style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">ℹ️&nbsp;&nbsp;</span>
+                            <font face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"><span style="font-size: 18px;">X-Find and Smart Alerts</span></font>
+                          </h2><span style="font-size: medium;">@Shyama Duriseti</span><br>
+                          <ul>
+                            <li><span style="font-size: 18px;">We need a backfill to Parikshit to make for a smoother transition. In the meantime, Parsikhist will try to address a few key workflows for the programmable app views.</span></li>
+                          </ul>
+                          <h2 class="gmail-heading2" style="font-size: 20px; line-height: 26px; color: rgb(34, 39, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 500; margin: 0px;">&nbsp;<span
+                              style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">ℹ️&nbsp;&nbsp;</span>
+                            <font face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"><span style="font-size: 18px;">Research Enablement</span></font>
+                          </h2><span style="font-size: medium;">@Liz Soehngen [C]</span><br>
+                          <ul>
+                            <li><span style="font-size: 18px;">No point of contact for leveraging Salesforce to keep track of study participants; I’m the only person in Design who uses SFDC, so technically nobody’s responsible for helping me set up
+                                what I need to be able to generate reports or to indicate when an existing contact has participated in our studies</span></li>
+                          </ul>
+                          <h2 class="gmail-heading2" style="font-size: 20px; line-height: 26px; color: rgb(34, 39, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 500; margin: 0px;">&nbsp;<span
+                              style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">ℹ️&nbsp;
+                              Global&nbsp;</span>
+                            <font face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"><span style="font-size: 18px;">Research Enablement</span></font>
+                          </h2><span style="font-size: medium;">@Liz Soehngen [C]</span><br>
+                          <ul>
+                            <li><span style="font-size: 18px;">Low designer recruitment for .NEXT proposals</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                <tbody>
+                  <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                    <td class="outlook-row-container bottom_3 top_3 left_6_3 right_6_3" style="padding-bottom: 24px; padding-top: 24px; padding-left: 48px; padding-right: 48px;">
+                      <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                        <tbody>
+                          <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                            <td class="top_1" style="padding-top: 8px;">
+                              <div class="regular" style="line-height: 28px; margin: 0px;">
+                                <div style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px; font-weight: 400;">
+                                  <h2 class="gmail-heading2" style="color: rgb(34, 39, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 20px; line-height: 26px; font-weight: 500; margin: 0px;">&nbsp;<span
+                                      style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Global&nbsp;</span>
+                                    <font face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"><span style="font-size: 18px;">Summary Update</span></font>
+                                  </h2>
+                                </div>
+                                <div style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px; font-weight: 400;">
+                                  <font face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"><span style="font-size: 18px;"><br></span></font>
+                                </div>
+                                <div style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px; font-weight: 400;">
+                                  <h2 class="gmail-heading2" style="color: rgb(34, 39, 46); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; line-height: 26px; margin: 0px;"><span
+                                      style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 20px; font-weight: 500;">🇮🇳&nbsp;</span>
+                                    <font face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol" style="font-size: 20px; font-weight: 500;"><span style="font-size: 18px;">Bangalore
+                                        Team Summary</span></font><br>
+                                  </h2>
+                                </div>
+                                <div style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px; font-weight: 400;">Sandeep/Mansi/Susheel/Arjun</div>
+                                <div style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px; font-weight: 400;"><span
+                                    style="font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;"><br></span></div>
+                                <div style=""><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px; font-weight: 400;">Mine</span><br>
+                                  <ul>
+                                    <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Pranav
+                                        has reached out to the Mine team to offer consulting support. JC had reached out to Savio with this request.</span></li>
+                                  </ul><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px; font-weight: 400;">Illustration
+                                    portal</span><br>
+                                  <ul>
+                                    <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">The
+                                        illustration repository portal is almost ready to be shipped with 1-2 weeks. Tomas is working with Nicolas on the implementation.</span></li>
+                                  </ul><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Outreach</span><br>
+                                  <ul>
+                                    <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px; font-weight: 400;">Abhishek,
+                                      Hardik, Pranav and Sourav Sarkar had scheduled webinar on Sat morning for students and early professionals on “How to craft a Design portfolio?”. The session was attended by ~54 participants and was received
+                                      very well. A lot of good content and tips were shared. They plan to follow-up with one more session soon.</li>
+                                    <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px; font-weight: 400;">The
+                                      prize money to all the winners will be released on 26 May. This will complete the last pending step for the design competition. Pranav is driving this to closur<span class="gmail_default" style="font-family: arial, sans-serif; font-size: small;">&#8203;e.</span></li>
+                                  </ul><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Knowledge
+                                    sharing session on Files</span><br>
+                                  <ul>
+                                    <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Mansi
+                                        is driving a monthly meeting with the intent to share knowledge. Last week, Rama spoke on Files in this meeting.</span></li>
+                                  </ul><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Test
+                                    drive</span><br>
+                                  <ul>
+                                    <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Sandeep
+                                        completed the usability evaluation and presented the findings to the TD team. They plan to open JIRAs and fix issues. Sandeep and Tim might work with Madhukar on a few issues that need redesigning.</span></li>
+                                  </ul><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Hiring</span><br>
+                                  <ul>
+                                    <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Sachin
+                                        Ghodke has verbally accepted the offer and the HR is working on releasing his offer letter. He is tentatively expected to join the team in October.</span></li>
+                                  </ul><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Flow,
+                                    Security Central</span><br>
+                                  <ul>
+                                    <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">The
+                                        team reviewed the ideal MVP Flow Integration experience with Dheeraj on 9th July.</span></li>
+                                    <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Susheel,
+                                        Saurabh, and Aromal had a meeting with Anton UX team stakeholders: Nico, Nikolai, Daniel, Wayne Conrad, and, Bala Neerumala around the PRD for the Scanning service. The vision for this service is to integrate
+                                        with Security Central.</span></li>
+                                    <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px; font-weight: 400;">Ketan
+                                      Shah and Bill O'Donnell are in alignment with the proposed MVP experience for AOS related security requirements and have started work with Nico and Nikolai. BLR team is going to support brainstorming and
+                                      alignment needs.</li>
+                                    <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px; font-weight: 400;">Saurabh
+                                      and Aromal’s contribution was appreciated in Beam’s all hands for proposing the MVP for Security Central alignment.</li>
+                                  </ul><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Virtual
+                                    Internship</span><br>
+                                  <ul>
+                                    <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Omkar
+                                        presented the high-level ideas for the redesign of the ‘Solutions page’ and some incremental work in Sizer last week.&nbsp;</span></li>
+                                  </ul><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">DR/
+                                    Leap</span><br>
+                                  <ul>
+                                    <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">The
+                                        eng team still hasn’t committed to upcoming FEATs. Sandeep will drive clarity with PMs and Eng teams next week<span class="gmail_default" style="font-family: arial, sans-serif; font-size: small;">&#8203;.&#8203;</span></span></li>
+                                  </ul>
+                                  <div><br></div>
+                                </div>
+                                <div style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px; font-weight: 400;">
+                                  <h2 class="gmail-heading2" style="color: rgb(34, 39, 46); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; line-height: 26px; margin: 0px;"><span
+                                      style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 20px; font-weight: 500;">🇩🇪&nbsp;</span>
+                                    <font face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"><span style="font-size: 18px; font-weight: 500;">Germany Team
+                                        Summary</span></font>
+                                  </h2>
+                                </div>
+                                <div style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px; font-weight: 400;">Pia
+                                  / Nico<font face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"><br></font>
+                                </div>
+                                <div style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px; font-weight: 400;"><br></div>
+                                <div style=""><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px; font-weight: 400;">Nutanix
+                                    Clusters</span>
+                                  <font color="#4d5969" face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"><span style="font-size: 18px;"><br>
+                                      <ul>
+                                        <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Roadmap
+                                            for Post-GA in planning. Keywords: MCM Navigation, seamless switch between Clusters and Frame on MCM, competitive analysis, Post-GA customer research&nbsp;</span></li>
+                                      </ul>
+                                    </span></font><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Files</span>
+                                  <font color="#4d5969" face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"><span style="font-size: 18px;"><br>
+                                      <ul>
+                                        <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Files
+                                            Roadmap July–EOY in planning: PC Version 2 (Kick-off next week), Files DR integration with the Leap, Unification for DR, Sync and SSR, Data Tiering</span></li>
+                                        <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Files
+                                            Analytics</span></li>
+                                      </ul>
+                                    </span></font><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Visual
+                                    Audit to be presented next week</span><br>
+                                  <ul>
+                                    <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Capacity
+                                        Explorer completed last week</span></li>
+                                    <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Duplicate
+                                        files feature to be finished next week</span></li>
+                                    <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Encryption
+                                        &amp; Key Management</span></li>
+                                    <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Adjustments
+                                        for KMS Selection (Order &amp; description) delivered</span></li>
+                                  </ul><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Xi@home</span>
+                                  <ul>
+                                    <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">UX
+                                        Scoping meeting next week</span></li>
+                                  </ul><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Recruiting
+                                    &amp; Team additions</span><br>
+                                  <font color="#4d5969" face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"><span style="font-size: 18px;">
+                                      <ul>
+                                        <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">All
+                                            hiring activities currently paused</span></li>
+                                      </ul>
+                                    </span></font><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Research&nbsp;</span>
+                                  <font color="#4d5969" face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"><span style="font-size: 18px;"><br>
+                                      <ul>
+                                        <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">3
+                                            Research Treatments (Clusters, Security, Responsive Grid) for Nu Experience Lab defined and proposed</span></li>
+                                      </ul>
+                                    </span></font><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Security&nbsp;</span><br>
+                                  <font color="#4d5969" face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"><span style="font-size: 18px;">
+                                      <ul>
+                                        <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">AOS
+                                            Security Dashboard kick-off, PRD discussion, first high-level concepts in the making</span></li>
+                                        <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Vulnerability
+                                            Scanner resource estimation, PRD discussion, milestone planning in the making<span class="gmail_default" style="font-family: arial, sans-serif; font-size: small;">&#8203;.</span></span>&#8203;</li>
+                                      </ul>
+                                    </span></font><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Others</span>
+                                  <font color="#4d5969" face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"><span style="font-size: 18px;"><br>
+                                      <ul>
+                                        <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Accessibility
+                                            Project: Finalisation of CXI presentation for meeting on 13th, July</span></li>
+                                        <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Questionnaire
+                                            and Newsletter for Wireframe Library created and sent for discussion</span></li>
+                                        <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Frame
+                                            - Redesign of Alerts &amp; Notification center revised</span></li>
+                                        <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">PC
+                                            Scalability - Review of UI audit, Dashboard scalability concepts, and customer insights.</span></li>
+                                        <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Next
+                                            step: Prioritization of tasks and alignment on approach</span></li>
+                                        <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Responsive
+                                            Design, finalization of UI&nbsp;</span>audit</li>
+                                      </ul>
+                                    </span></font>
+                                </div>
+                                <div style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px; font-weight: 400;">
+                                  <font face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"><br></font>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <h2 class="gmail-heading2" style="color: rgb(34, 39, 46); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; line-height: 26px; margin: 0px;"><span
+                          style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 20px; font-weight: 500;">🇺🇸&nbsp;</span>
+                        <font face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol" style="font-size: 20px; font-weight: 500;"><span style="font-size: 18px;">San
+                            Jose Team Summary<span class="gmail_default" style="font-family: arial, sans-serif; font-size: small;">&#8203; - Tim&#8203;</span></span></font><br>
+                      </h2>
+                      <div>
+                        <ul>
+                          <li><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">People
+                              - All check-ins delivered and submitted prior to the deadline. Promo package in development for 1 IC.</span><br></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <ul>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Culture
+                            Amp - Career planning workshop agenda &amp; date finalized. Requirements doc revised &amp; presented at design critique (Viraj).</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Licensing
+                            - RBAC, Dark Site, and 1-click all presented during Satish review; RBAC &amp; portal requirements have been largely been settled.&nbsp;</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">SJ
+                            UX research - Completed kick-offs with 2 design partners. Slack as a communication channel continues to be a challenge.</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Test
+                            Drive - transitioned this to Sandeep. Will remove as an objective.</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">PC
+                            Core - Roadmap areas identified. Paul to take first pass at how to structure the roadmap for both UX and non-UX audiences (7/16)</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">UXE
+                            - Illustration library delivered, began work on Dashboards and Nav V2 prototypes (7/31). The research library is second priority and may be delayed until 8/15+.</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Networking
+                            VPN multi-site FnF completed.</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Karbon
+                            and Xi Karbon convergence UX: Phase 1 mockups done and presented to both teams.</li>
+                        </ul>
+                        <div><span style="color: rgb(34, 39, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 20px;">🚦&nbsp;</span>
+                          <font face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol" style="color: rgb(34, 39, 46); font-size: 20px;"><span style="font-size: 18px;">Progress
+                              but not completed</span></font>
+                          <font color="#4d5969" face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"><span style="font-size: 18px;"><br></span></font>
+                        </div>
+                      </div>
+                      <div>
+                        <ul>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Reviewed
+                            Management Architect Ladder and Promotion process docs.</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Next
+                            version of the newsletter.</li>
+                        </ul>
+                        <div>
+                          <font face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol" style="color: rgb(34, 39, 46); font-size: 20px;"><span style="font-size: 18px;">🛑</span></font><span
+                            style="color: rgb(34, 39, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 20px;">&nbsp;</span>
+                          <font face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol" style="color: rgb(34, 39, 46); font-size: 20px;"><span style="font-size: 18px;">No
+                              Progress</span></font>
+                          <font color="#4d5969" face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"><span style="font-size: 18px;"><br></span></font>
+                        </div>
+                      </div>
+                      <div>
+                        <ul>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Personas
+                            - will de-prioritize and remove from status updates.&nbsp;&nbsp;</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Objectives
+                            for the next two weeks</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">People
+                            - Promo Committee (7/16). OKRs/Career ladders reviewed for all reports (July 31).</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Culture
+                            Amp - Career workshop (7/16). Requirements doc presented to Satish (7/25);&nbsp;</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Licensing
+                            - Darkside “ready for dev” draft 7/25. One-click Prep for UX QBR (TBD).</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Objects
+                            - Viraj/Ahmed is holding the fort but the project needs a full-time designer. The team needs a strong design voice as they are relatively new to working in the UX design space.</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">LCM
+                            - no coverage.</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Global
+                            Research - 3rd Design partner kick-off. The second round of designs presented to the original 2 partners (dashboards part 2, storage) (7/25). Recruiting 5 users for Nav V2 design test (7/22). 360 Dashboard tutorial for
+                            the GRE team (7/14).</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">PC
+                            Core - First roadmap draft (7/16)</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Design
+                            Quality - Fit and finish tracking; Accessibility presentation at DQ (7/13)); New content scanning process now live. Prism content is checked prior to check-in.&nbsp;</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Telemetry
+                            -&nbsp; Reach design consensus on exporting data from Pulse to the production analytics server; Publish initial report based on collection of telemetry data from IT system [ETA: 7/29]</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">UXE
+                            - Dashboards and Nav V2 prototypes (7/31). Research library is second priority and may be delayed until 8/15+.</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Newsletter
+                            - Finalize and publish next version (7/22).</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Projects
+                            - New cycle of deep dives w/ designers begins (Dashboards, LCM, Networking) (7/31)</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Personas
+                            - de-prioritizing and will remove this from objectives.&nbsp;</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">XKS
+                            - Fit and Finish review for XKS&nbsp; [Aug Sprint]; App catalog concepts &amp; Real-time data visualization&nbsp; [July Sprint]</li>
+                        </ul>
+                        <div><span style="color: rgb(34, 39, 46); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">💥
+                            At-Risk</span>
+                          <font color="#4d5969" face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"><span style="font-size: 18px;"><br></span></font>
+                        </div>
+                      </div>
+                      <div>
+                        <ul>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">NCP
+                            certification&nbsp;</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">“Research
+                            must Die” deadline</li>
+                        </ul>
+                        <div>
+                          <font color="#4d5969" face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"><span style="font-size: 18px;"><br></span></font>
+                        </div>
+                      </div>
+                      <div><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 20px;">🇺🇸&nbsp;</span>
+                        <font face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol" style="font-size: 20px;"><span style="font-size: 18px;">San Jose Team
+                            Summary<span class="gmail_default" style="font-family: arial, sans-serif; font-size: small;">&#8203; &#8203;</span></span></font>- Savio<font face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"
+                          style="font-size: 20px;"><span style="font-size: 18px;"><span class="gmail_default" style="font-family: arial, sans-serif; font-size: small;">&nbsp;</span></span></font>
+                        <font color="#4d5969" face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"><span style="font-size: 18px;"><br></span></font>
+                      </div>
+                      <div><span style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;"><span
+                            class="gmail_default" style="font-family: arial, sans-serif; font-size: small;"><br></span></span></div>
+                      <div><span style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;"><span
+                            class="gmail_default" style="font-family: arial, sans-serif; font-size: small;">
+                            <font color="#4d5969">🔺</font>
+                            <font color="#000000"> &#8203;</font>
+                          </span>
+                          <font color="#000000">Projects (High visibility)</font>
+                        </span><br>
+                        <ul>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Storage
+                            parity</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Onboarding
+                            designed&nbsp; for storage consumption</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Initial
+                            phases of user testing being planned with Brighton, Liz etc</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">AHV</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">AHV:
+                            VM Migration has redundancy with a similar features in DR working with teams on the resolution.</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Foreseeing
+                            resource crunch for AHV-lined projects, working on the prioritization.</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Prism
+                            Ops</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">FnF
+                            reviews for the 3 features that got pushed into 5.18.1</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Visual
+                            Maps</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Smart
+                            Alerts</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Autopilot
+                            (is in the pipeline)</li>
+                        </ul><span style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">
+                          <font color="#4d5969">ℹ️</font><span class="gmail_default" style="font-family: arial, sans-serif; font-size: small;">
+                            <font color="#4d5969">&#8203;</font>
+                            <font color="#000000"> &#8203;</font>
+                          </span>
+                          <font color="#000000">Other Projects</font>
+                        </span>
+                        <font color="#4d5969" face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"><span style="font-size: 18px;"><br></span></font>
+                        <ul>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Insights:
+                            Julie engaged on UX, Rachel Huang to continue working on UI.</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Networking
+                            is a good place, unified networking workflows delivered. Brighton working with Shreya on the deliverable and separately on long term project planning.</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Visualization
+                            system work on track. Need to reschedule readout scheduled for Dheeraj and Mark T.</li>
+                        </ul><span style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">
+                          <font color="#4d5969">🖼</font><span class="gmail_default" style="color: rgb(77, 89, 105); font-family: arial, sans-serif; font-size: small;">&#8203; &#8203;</span>
+                          <font color="#000000">UI / Visual</font>
+                        </span>
+                        <ul>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Finalized
+                            New sketch library release. Gathering feedback.</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Illustration
+                            library released. Smaller tweaks on access control.</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Ahmed
+                            started Visual Design evaluation of Objects with Viraj.</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Rachel
+                            started Insights visual design work with Julie.</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Kacy
+                            to start engineering feedback pilot for design system work.</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Initiating
+                            discussion and planning demo of Figma as a design tool.</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Continuing
+                            work on wireframing sketch library.</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Evaluated
+                            color pairing accessibility in the system. To start product review.</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Continuing
+                            work on PC improvements with Bryan</li>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Consolidating
+                            Entity Browser improvement efforts.</li>
+                        </ul><span style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">
+                          <font color="#4d5969">🏢</font><span class="gmail_default" style="color: rgb(77, 89, 105); font-family: arial, sans-serif; font-size: small;">&#8203; &#8203;</span>
+                          <font color="#000000">Hiring</font>
+                        </span>
+                        <font color="#4d5969" face="nutanix_soft, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol"><span style="font-size: 18px;"><br></span></font>
+                        <ul>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Internships
+                            will be ending in a few weeks. Kunal and Ashish will be presenting their projects to the team coming up.</li>
+                        </ul><span style="font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">
+                          <font color="#4d5969">😀</font><span class="gmail_default" style="color: rgb(77, 89, 105); font-family: arial, sans-serif; font-size: small;">&#8203; &#8203;</span>
+                          <font color="#000000">Team</font>
+                        </span>
+                        <ul>
+                          <li style="color: rgb(77, 89, 105); font-family: nutanix_soft, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 18px;">Reflective
+                            Check-ins in progress this week with the team.</li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                <tbody>
+                </tbody>
+              </table>
+
+              <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                <tbody>
+                  <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                    <td class="outlook-row-container bottom_3 top_3 left_6_3 right_6_3" style="padding-bottom: 24px; padding-top: 24px; padding-left: 48px; padding-right: 48px;"><span class="gmail_default" style="font-family: arial, sans-serif; font-size: small;">&#8203;&#8203;</span><br></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                <tbody>
+                </tbody>
+              </table>
+
+
+
+              <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                <tbody>
+                  <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                    <td class="outlook-row-container top_1 left_6_3 right_6_3" style="padding-top: 8px; padding-left: 48px; padding-right: 48px;">
+                      <table width="100%">
+                        <tbody>
+                          <tr>
+                            <td class="_12xcxtl" style="border-top: 1px solid #DBDFE1 !important;" width="100%"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                <tbody>
+                  <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                    <td class="">
+                      <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                        <tbody>
+                          <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                            <td class="outlook-row-container left_6_3 right_6_3" style="padding-left: 48px; padding-right: 48px;">
+                              <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                                <tbody>
+                                  <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                    <td class="bottom_4_3 top_4_3" style="padding-bottom: 32px; padding-top: 32px;">
+                                      <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                                        <tbody>
+                                          <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                            <td class="top_0" style="padding-top: 0px;">
+                                              <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                                                <tbody>
+                                                  <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                                    <td class="">
+                                                      <p class="_1g6ojml" style="color: #22272E !important; ont-family: 'nutanix_soft',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !important; font-size: 14px !important; font-weight: 400 !important; line-height: 18px !important; margin: 0px !important;">Nutanix</p>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                              <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                                                <tbody>
+                                                  <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                                    <td class="">
+                                                      <p class="_1g6ojml" style="color: #22272E !important; ont-family: 'nutanix_soft',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !important; font-size: 14px !important; font-weight: 400 !important; line-height: 18px !important; margin: 0px !important;">
+                                                        Crafted in California</p>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                              <table cellpadding="0" class="" style="border-collapse:collapse;border-spacing:0;width:100%">
+                                                <tbody>
+                                                  <tr class="_1ckj08w" style="padding: 0px !important; margin: 0px !important;">
+                                                    <td class="">
+                                                      <p class="_1g6ojml" style="color: #22272E !important; ont-family: 'nutanix_soft',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'!important; font-size: 14px !important; font-weight: 400 !important; line-height: 18px !important; margin: 0px !important;">San
+                                                        Jose, CA 95110</p>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
